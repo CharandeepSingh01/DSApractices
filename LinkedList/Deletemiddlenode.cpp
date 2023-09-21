@@ -18,3 +18,20 @@ public:
         return dummy->next;
     }
 };
+
+
+class Solution {
+public:
+    ListNode* deleteMiddle(ListNode* head) {
+        ListNode * dummy= new ListNode();
+        dummy->next=head;
+        ListNode *fast=dummy;
+        ListNode *slow=dummy;
+        while(fast->next!=NULL && fast->next->next !=   NULL ){
+            fast=fast->next->next;
+            slow=slow->next;
+        }
+        slow->next=slow->next->next;
+        return dummy->next;
+    }
+};
