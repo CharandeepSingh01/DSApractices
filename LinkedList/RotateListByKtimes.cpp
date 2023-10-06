@@ -9,4 +9,4 @@ ListNode* rotateRight(ListNode* head, int k) {
     head = cur->next;
     cur->next = nullptr;
    return head; 
-}
+} 
