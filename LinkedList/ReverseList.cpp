@@ -6,4 +6,4 @@
             dummy=head;
             head=temp;
         }
-    }
+    } 
